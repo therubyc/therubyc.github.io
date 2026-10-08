@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent motion design. Identity in motion, unusual ideas, and carefully made work.">
+  <title>David Dröge — Motion & experiments</title>
+  <link rel="icon" type="image/png" href="assets/david-droege-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion-stage.css">
+  <script defer src="assets/lottie.min.js"></script>
+  <script defer src="experiment/experiment.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a class="wordmark" href="#" aria-label="David Dröge, home"><img class="personal-logo" src="assets/david-droege-logo.png" alt="" width="73" height="75"><span>David Dröge</span></a>
+    <nav aria-label="Main navigation"><a href="#customers">Customers</a><a href="#showreel">Showreel</a><a href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>INDEPENDENT MOTION DESIGNER</span><span>01 / INTRO</span></div>
+        <h1 id="hero-title">Good ideas.<br>Strange<br><span class="outline">moves.</span><span class="asterisk" aria-hidden="true">✳</span></h1>
+        <div class="hero-bottom"><div class="intro-text"><p>I turn ideas into identities that move.<br>A little precision. A little play.</p><a class="text-link" href="#contact">Have something in mind? <span aria-hidden="true">↗</span></a></div></div>
+      </div>
+      <div class="stage logo-stage" aria-label="Interactive logo motion study">
+<div class="stage-art grid">
+<canvas id="study" data-motion="experiment/motion.json.gz" role="img" aria-label="A logo assembled from moving pieces; move your pointer to push and turn them"></canvas>
+<video src="experiment/reference.webm" muted playsinline preload="metadata" hidden aria-label="Original Cavalry reference animation"></video>
+</div>
+<div class="stage-bottom"><span id="coordinates">X 000 / Y 000</span></div>
+
+<div class="hotspot look">
+<button class="mark-toggle" aria-label="Appearance options" aria-expanded="false" aria-controls="look-panel">+</button>
+<div class="panel" id="look-panel"><span class="panel-title">// appearance</span>
+<div class="modes" role="group" aria-label="Visual treatment"><button data-mode="clean" aria-pressed="true">Clean</button><button data-mode="pixel" aria-pressed="false">Pixel</button><button data-mode="dither" aria-pressed="false">Dither</button></div>
+<label>pixel_size <select id="pixel-size" aria-label="Pixel size"><option value="3">fine</option><option value="6" selected>medium</option><option value="10">coarse</option></select></label>
+</div></div>
+
+<div class="hotspot surface">
+<button class="mark-toggle" aria-label="Canvas and cursor options" aria-expanded="false" aria-controls="surface-panel">+</button>
+<div class="panel" id="surface-panel"><span class="panel-title">// canvas</span>
+<label>dot_grid <input id="grid" type="checkbox" checked aria-label="Dot grid"></label>
+<label>cursor_lens <input id="lens" type="checkbox" checked aria-label="Cursor lens"></label>
+</div></div>
+
+<div class="hotspot motion">
+<button class="mark-toggle" aria-label="Motion options" aria-expanded="false" aria-controls="motion-panel">+</button>
+<div class="panel" id="motion-panel"><span class="panel-title">// motion</span>
+<label>interaction <input id="interactive" type="checkbox" checked disabled aria-label="Interaction"></label>
+<button id="pause" disabled>Pause</button>
+<div class="timeline"><input id="timeline" aria-label="Animation timeline in seconds" type="range" min="0" max="4.166667" step="0.016667" value="0" disabled><output id="time">0.0 / 4.2 s</output></div>
+</div></div>
+</div>
+    </section>
+    <section class="customers" id="customers" aria-labelledby="customers-title">
+      <div class="section-head"><h2 class="eyebrow" id="customers-title">02 / GOOD COMPANY</h2><p>A few names I’ve worked with.</p></div>
+      <div class="customer-grid" aria-label="Selected customers">
+        <div class="client"><img class="customer-logo logo-mercedes" src="assets/mercedes-benz.svg" alt="Mercedes-Benz" width="72" height="72"></div>
+        <div class="client"><img class="customer-logo logo-bosch" src="assets/bosch.svg" alt="Bosch" width="170" height="38"></div>
+        <div class="client"><img class="customer-logo logo-berlin" src="assets/berlin-bear.svg" alt="City of Berlin — Berlin bear" width="66" height="70"></div>
+        <div class="client"><img class="customer-logo logo-milk" src="assets/milk.svg" alt="PBL Milk GmbH" width="74" height="74"></div>
+        <div class="client"><img class="customer-logo logo-farco" src="assets/farco.svg" alt="FARCO-PHARMA" width="160" height="55"></div>
+        <div class="client"><img class="customer-logo logo-serways" src="assets/serways.png" alt="Serways" width="160" height="55"></div>
+        <div class="client"><img class="customer-logo logo-orthomol" src="assets/orthomol.svg" alt="Orthomol" width="165" height="50"></div>
+        <div class="client"><img class="customer-logo logo-zeiss" src="assets/zeiss.svg" alt="ZEISS" width="70" height="70"></div>
+      </div>
+    </section>
+    <section class="showreel" id="showreel" aria-labelledby="showreel-title">
+      <div class="section-head"><span class="eyebrow">03 / IN MOTION</span><h2 id="showreel-title">Showreel</h2></div>
+      <div class="reel-screen">
+        <iframe class="reel-embed" src="https://www.youtube-nocookie.com/embed/72S-iUW2030?autoplay=0" title="David Dröge — Showreel on YouTube" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <a class="reel-external text-link" href="https://youtu.be/72S-iUW2030" target="_blank" rel="noopener noreferrer">Watch on YouTube <span class="reel-link-note">(opens in a new tab)</span></a>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="eyebrow"><span>04 / NEXT THING</span><span>OPEN TO GOOD IDEAS</span></div>
+      <div class="contact-body"><h2 id="contact-title">Let’s make<br>something <span class="contact-move">move.</span></h2><a class="contact-button" href="mailto:david.droege@web.de" aria-label="Email david.droege@web.de"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 36 36 12M12 12h24v24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/></svg></a></div>
+      <div class="contact-foot"><a href="mailto:david.droege@web.de">david.droege@web.de</a><p>A project, a question, a wonderfully odd idea.<br>My inbox is a good place to start.</p></div>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> DAVID DRÖGE</span><span>ALWAYS IN PROCESS.</span><a href="#">Back to top ↑</a></footer>
+</body>
+</html>
