@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+							<defs>
+								<mask id="header-logo-mask">
+									<rect id="header-logo-mask-rect" x="82" y="82" width="140" height="136" fill="#fff"/>
+								</mask>
+							</defs>
+							<circle id="header-logo-circle" cx="150" cy="150" r="140" fill="none" stroke="#000" stroke-width="20" transform="rotate(-90, 150, 150)" />
+							<g mask="url(#header-logo-mask)">
+								<path id="header-logo-m" d="M82.352 213.918h30.581l-1.034-97.424.32-.357 27.797 97.78h21.968l27.797-97.78.32.357-1.034 97.424h30.58V83.807h-42.862l-25.503 85.63h-.357l-25.86-85.63H82.351z"/>
+							</g>
+						</svg>
